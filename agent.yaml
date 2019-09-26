@@ -43,6 +43,7 @@ monitors:
   - type: host-metadata
   - type: collectd/vmem
   - type: trace-forwarder
+    listenAddress: 0.0.0.0:9100
   - type: docker-container-stats
     labelsToDimensions:
       <<: *labelMap
